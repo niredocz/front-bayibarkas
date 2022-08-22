@@ -1,0 +1,221 @@
+/* Preloader & Animation */
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999;
+  background-color: #ffffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-icon {
+  width: 150px;
+}
+
+.loading-bar {
+  width: 100%;
+  height: 3px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.loading-bar::before {
+  content: "";
+  width: 75px;
+  height: 3px;
+  background-color: #a54686;
+  position: absolute;
+  left: -75px;
+  animation: loading-bar 1.5s infinite ease;
+}
+
+@keyframes loading-bar {
+  50% {
+    left: 150px;
+  }
+}
+
+.limit-1-line-text {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.limit-2-line-text {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.limit-3-line-text {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.min-height-3-line-text {
+  min-height: 58px;
+}
+
+.user-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.user-head img {
+  width: 100%;
+  max-width: 40px;
+}
+
+.user-head>span {
+  color: #a54686;
+}
+
+.head-user:hover {
+  cursor: pointer;
+}
+
+.header-wrap .logo {
+  margin-right: 20px;
+}
+
+.header-wrap .logo img {
+  max-width: 120px;
+}
+
+.hero-slider-1 .slider-content p {
+  font-size: 1rem;
+}
+
+.btn-hero {
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 7px;
+  background-color: #a54686;
+}
+
+.carousel-kategori .carousel-per-kategori {
+  overflow: hidden;
+  margin: 0 -12px;
+}
+
+.carousel-kategori .carousel-per-kategori .card-2 {
+  margin: 0 12px;
+}
+
+.product-cart-wrap:hover,
+.categories-dropdown-active-large,
+.carousel-kategori .carousel-per-kategori .card-2:hover {
+  border-color: #a54686;
+}
+
+.product-cart-wrap .product-card-bottom .add-cart .add {
+  display: flex;
+  align-items: center;
+  background-color: #fff0fa;
+}
+
+/* .product-cart-wrap .product-img-action-wrap .product-img a {
+  position: relative;
+}
+
+.product-cart-wrap .product-img-action-wrap .product-img a::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.product-cart-wrap .product-img-action-wrap .product-img a::after {
+  content: "Lihat Produk";
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  z-index: 1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+} */
+
+.img-banner {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.footer-logo {
+  max-width: 200px;
+}
+
+.iframe-footer {
+  width: 100%;
+  height: 250px;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0 0.05rem rgb(8 60 130 / 6%), 0rem 0rem 1.25rem rgb(30 34 40 / 4%);
+}
+
+@media (min-width: 1600px) {
+  .header-wrap .logo {
+    margin-right: 70px;
+  }
+
+  .hero-slider-1 .slider-content {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .main-menu > nav > ul > li > a {
+    font-size: 14px;
+  }
+
+  .hotline p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+  .hero-slider-1 .slider-content {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-categori-wrap .categori-dropdown-inner {
+    min-width: 800px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo.logo-width-1 a img {
+    width: 65px;
+    min-width: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-top .mobile-header-logo a img {
+    width: 70px;
+  }
+
+  .hero-slider-1 .slider-content {
+    max-width: 310px;
+  }
+
+  .mobile-header-wrapper-style {
+    width: 100%;
+  }
+}
