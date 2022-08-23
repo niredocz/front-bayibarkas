@@ -42,6 +42,14 @@
   }
 }
 
+.bg-primary {
+  background-color: #a54686 !important;
+}
+
+.text-primary {
+  color: #a54686 !important;
+}
+
 .limit-1-line-text {
     display: -webkit-box !important;
     -webkit-line-clamp: 1;
@@ -150,6 +158,11 @@
   position: absolute;
   transform: translate(-50%, -50%);
 } */
+
+a.button-add-to-cart {
+  color: #fff;
+  background-color: #a54686;
+}
 
 .img-banner {
   width: 100%;
