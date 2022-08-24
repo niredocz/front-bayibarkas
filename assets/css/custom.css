@@ -123,6 +123,38 @@
   margin: 0 12px;
 }
 
+.archive-header {
+  background-image: none;
+  background-color: #fff1fb;
+}
+
+.search-wrap input {
+  background-color: #fff !important;
+  border-radius: 15px;
+  padding: 0 60px;
+  background: url(../imgs/theme/icons/icon-search.png) no-repeat left;
+  background-position-x: 20px;
+}
+
+.search-wrap input:focus {
+  background-color: #fff;
+  border-color: #a54686;
+}
+
+.search-wrap .btn-submit {
+  border: 1px solid #a54686;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+}
+
+.card-category {
+  padding: 15px;
+  min-height: auto;
+}
+
 .product-cart-wrap:hover,
 .categories-dropdown-active-large,
 .carousel-kategori .carousel-per-kategori .card-2:hover {
