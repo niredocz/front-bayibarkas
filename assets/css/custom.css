@@ -155,6 +155,10 @@
   min-height: auto;
 }
 
+.card-category figure img {
+  max-width: 50px;
+}
+
 .product-cart-wrap:hover,
 .categories-dropdown-active-large,
 .carousel-kategori .carousel-per-kategori .card-2:hover {
