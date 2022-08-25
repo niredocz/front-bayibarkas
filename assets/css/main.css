@@ -4171,8 +4171,12 @@ table .product-thumbnail img {
 }
 
 .product-cart-wrap .product-badges span.new {
-  background-color: #a54686;
-  /* background-color: #3BB77E; */
+  /* background-color: #a54686; */
+  background-color: #3BB77E;
+}
+
+.product-cart-wrap .product-badges span.second {
+  background-color: #f59758;
 }
 
 .product-cart-wrap .product-badges span.sale {
