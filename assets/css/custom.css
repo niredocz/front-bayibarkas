@@ -224,6 +224,28 @@ a.button-add-to-cart {
   box-shadow: 0 0 0 0.05rem rgb(8 60 130 / 6%), 0rem 0rem 1.25rem rgb(30 34 40 / 4%);
 }
 
+.custom-modal .nav-link {
+  margin: 7px 0;
+  padding: 0;
+  border-radius: .25rem;
+  background-color: #f6f6f6;
+  border: 2px solid transparent;
+}
+
+.custom-modal .nav-link.active {
+  border-color: #a54686;
+  background-color: #f6f6f6;
+}
+
+.custom-modal .modal-tab .tab-pane {
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  border: 1px solid #ececec;
+  /* overflow: hidden; */
+  position: relative;
+}
+
 @media (min-width: 1600px) {
   .header-wrap .logo {
     margin-right: 70px;
@@ -261,6 +283,10 @@ a.button-add-to-cart {
     width: 65px;
     min-width: 0px;
   }
+
+  .archive-header {
+    padding: 50px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -274,5 +300,30 @@ a.button-add-to-cart {
 
   .mobile-header-wrapper-style {
     width: 100%;
+  }
+
+  .page-header.breadcrumb-wrap {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .archive-header {
+    padding: 20px;
+  }
+  
+  .archive-header h1 {
+    font-size: 20px;
+  }
+
+  .archive-header .breadcrumb {
+    font-size: 14px;
+  }
+
+  .archive-header .breadcrumb span {
+    padding: 0;
+  }
+
+  .contact-infor {
+    margin-bottom: 25px;
   }
 }

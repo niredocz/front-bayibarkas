@@ -723,6 +723,13 @@
             zoomWindowFadeIn: 500,
             zoomWindowFadeOut: 750
         });
+
+        $(".modal-tab .tab-pane img").elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750
+        });
     });
 
     /*--- VSticker ----*/
