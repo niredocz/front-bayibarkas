@@ -109,8 +109,10 @@
 
 .slider-nav-thumbnails .slick-slide img  {
   border: 2px solid transparent;
+  cursor: pointer;
 }
 
+.slider-nav-thumbnails .slick-slide img:hover,
 .slider-nav-thumbnails .slick-slide.slick-current img {
   border-color: #a54686;
 }
@@ -120,6 +122,34 @@
   color: #fff;
   border-radius: 7px;
   background-color: #a54686;
+}
+
+.btn-direct {
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 7px;
+  padding: 15px 20px;
+  position: relative;
+  background-color: #a54686;
+  font-family: "Quicksand", sans-serif;
+  transition: .2s all ease-in-out;
+}
+
+.btn-direct i {
+  padding: 10px;
+  color: #fff;
+  line-height: 1;
+  border-radius: 50%;
+  background-color: #1ab452;
+}
+
+.btn-direct:hover {
+  color: #fff;
+  transform: translateY(-5px);
+  background-color: #8b3b70;
 }
 
 .carousel-kategori .carousel-per-kategori {
@@ -246,6 +276,17 @@ a.button-add-to-cart {
   position: relative;
 }
 
+.contact-infor li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.contact-infor li img {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
 @media (min-width: 1600px) {
   .header-wrap .logo {
     margin-right: 70px;
@@ -292,6 +333,22 @@ a.button-add-to-cart {
 @media screen and (max-width: 480px) {
   .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-top .mobile-header-logo a img {
     width: 70px;
+  }
+
+  .custom-modal .modal-dialog {
+    margin: 0 15px;
+  }
+
+  .custom-modal .detail-info p {
+    font-size: 14px;
+  }
+  
+  .custom-modal .detail-info .title-detail {
+    font-size: 20px;
+  }
+
+  .custom-modal .detail-info .product-price .current-price {
+    font-size: 28px;
   }
 
   .hero-slider-1 .slider-content {
