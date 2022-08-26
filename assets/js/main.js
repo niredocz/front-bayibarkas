@@ -717,19 +717,19 @@
         $(".product-image-slider").slick("setPosition");
         $(".slider-nav-thumbnails").slick("setPosition");
 
-        $(".product-image-slider .slick-active img").elevateZoom({
-            zoomType: "inner",
-            cursor: "crosshair",
-            zoomWindowFadeIn: 500,
-            zoomWindowFadeOut: 750
-        });
+        // $(".product-image-slider .slick-active img").elevateZoom({
+        //     zoomType: "inner",
+        //     cursor: "crosshair",
+        //     zoomWindowFadeIn: 500,
+        //     zoomWindowFadeOut: 750
+        // });
 
-        $(".modal-tab .tab-pane img").elevateZoom({
-            zoomType: "inner",
-            cursor: "crosshair",
-            zoomWindowFadeIn: 500,
-            zoomWindowFadeOut: 750
-        });
+        // $(".modal-tab .tab-pane img").elevateZoom({
+        //     zoomType: "inner",
+        //     cursor: "crosshair",
+        //     zoomWindowFadeIn: 500,
+        //     zoomWindowFadeOut: 750
+        // });
     });
 
     /*--- VSticker ----*/
