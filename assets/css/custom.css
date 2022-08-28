@@ -317,6 +317,10 @@ a.button-add-to-cart {
   .main-categori-wrap .categori-dropdown-inner {
     min-width: 800px;
   }
+
+  .primary-sidebar .widget-vendor {
+    max-width: 500px;
+  }
 }
 
 @media screen and (max-width: 768px) {
