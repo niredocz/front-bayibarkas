@@ -10,13 +10,14 @@
             asNavFor: '.slider-nav-thumbnails',
         });
 
-        $('.product-image-slider-2').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
+        $('.produk-slider').slick({
             fade: false,
-            asNavFor: '.slider-nav-thumbnails',
-        });
+            arrows: false,
+            slidesToShow: 1,
+            infinite: false,
+            slidesToScroll: 1,
+            asNavFor: '.produk-slider-nav',
+        })
 
         $('.slider-nav-thumbnails').slick({
             slidesToShow: 4,
@@ -27,6 +28,34 @@
             
             prevArrow: '<button type="button" class="slick-prev"><i class="fi-rs-arrow-small-left"></i></button>',
             nextArrow: '<button type="button" class="slick-next"><i class="fi-rs-arrow-small-right"></i></button>'
+        });
+
+        $('.produk-slider-nav').slick({
+            dots: false,
+            vertical: true,
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            asNavFor: '.produk-slider',
+            prevArrow: '<button type="button" class="slick-prev"><i class="fi-rs-arrow-small-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="fi-rs-arrow-small-right"></i></button>',
+
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        vertical: false,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        vertical: false,
+                    }
+                }
+            ]
         });
 
         // Remove active class from all thumbnail slides
@@ -45,12 +74,23 @@
         $('.product-image-slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
             var img = $(slick.$slides[nextSlide]).find("img");
             $('.zoomWindowContainer,.zoomContainer').remove();
-            // $(img).elevateZoom({
-            //     zoomType: "inner",
-            //     cursor: "crosshair",
-            //     zoomWindowFadeIn: 500,
-            //     zoomWindowFadeOut: 750
-            // });
+            $(img).elevateZoom({
+                zoomType: "inner",
+                cursor: "crosshair",
+                zoomWindowFadeIn: 500,
+                zoomWindowFadeOut: 750
+            });
+        });
+
+        $('.produk-slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+            var img = $(slick.$slides[nextSlide]).find("img");
+            $('.zoomWindowContainer,.zoomContainer').remove();
+            $(img).elevateZoom({
+                zoomType: "inner",
+                cursor: "crosshair",
+                zoomWindowFadeIn: 500,
+                zoomWindowFadeOut: 750
+            });
         });
 
         // $('.modal-tab .tab-pane.active').on('beforeChange', function () {
